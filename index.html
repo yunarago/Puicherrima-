@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pulcherrima</title>
+
+  <!-- 별 생성 라이브러리 -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background: black;
+      color: white;
+      font-family: Arial;
+    }
+
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 40vh;
+      font-size: 50px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- 별 배경 -->
+  <div id="particles-js"></div>
+
+  <!-- 화면 가운데 글씨 -->
+  <h1>June 11 — Pulcherrima</h1>
+
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 200 },   // 별 개수
+        size: { value: 2 },       // 별 크기
+        move: { speed: 0.5 },     // 움직이는 속도
+        color: { value: "#ffffff" },
+        line_linked: { enable: false }
+      }
+    });
+  </script>
+
+</body>
+</html>
